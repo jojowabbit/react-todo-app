@@ -13,8 +13,8 @@ class TodoList extends Component {
             <TodoItem
               key={item.id}
               title={item.title}
-              handleDelete={() => handleDelete}
-              handleEdit={() => handleEdit}
+              handleDelete={() => handleDelete(item.id)}
+              handleEdit={() => handleEdit(item.id)}
             />
           );
         })}
